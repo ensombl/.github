@@ -1,0 +1,42 @@
+name: Documentation
+description: Documentation updates or fixes
+type: Task
+labels:
+  - documentation
+  - "status: triage"
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: What documentation needs work?
+      placeholder: Describe what needs to be documented or updated...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: doc_type
+    attributes:
+      label: Documentation Type
+      options:
+        - README
+        - API Documentation
+        - Code Comments
+        - Developer Guide
+        - Quick Start Guide
+        - Architecture / Design Docs
+        - Other
+
+  - type: input
+    id: location
+    attributes:
+      label: Location
+      description: File path or section
+      placeholder: "e.g., README.md, /docs/api/authentication.md"
+
+  - type: textarea
+    id: proposed_change
+    attributes:
+      label: What should be documented or changed?
+      placeholder: Describe the documentation update...
+    validations:
+      required: true

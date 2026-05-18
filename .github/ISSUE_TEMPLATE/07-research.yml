@@ -1,0 +1,35 @@
+name: Research / Investigation
+description: Research task or technical investigation
+type: Task
+labels:
+  - research
+  - "status: triage"
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: What needs investigation?
+      placeholder: Describe what needs to be researched...
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Why do we need this research?
+      placeholder: Background and motivation...
+
+  - type: textarea
+    id: goals
+    attributes:
+      label: Research Goals
+      placeholder: |
+        - [ ] Goal 1
+        - [ ] Goal 2
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      placeholder: Links, references, constraints...

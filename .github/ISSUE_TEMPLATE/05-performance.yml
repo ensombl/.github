@@ -1,0 +1,52 @@
+name: Performance
+description: Performance issue or optimization
+type: Task
+labels:
+  - performance
+  - "status: triage"
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Performance Issue
+      description: What is slow or inefficient?
+      placeholder: Describe the issue...
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      placeholder: |
+        1. Go to '...'
+        2. Perform action '...'
+        3. Notice slow performance
+    validations:
+      required: true
+
+  - type: textarea
+    id: metrics
+    attributes:
+      label: Performance Metrics
+      placeholder: |
+        - Current response time: ~2.5s
+        - Expected response time: <500ms
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      placeholder: |
+        - OS/Browser:
+        - Hardware:
+        - Network:
+
+  - type: textarea
+    id: profiling
+    attributes:
+      label: Profiling Data / Logs
+      placeholder: Paste profiling data or performance logs here
+      render: shell

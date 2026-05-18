@@ -1,0 +1,35 @@
+name: Refactor / Technical Debt
+description: Code refactoring or technical debt cleanup
+type: Task
+labels:
+  - refactor
+  - "status: triage"
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: What needs to be refactored?
+      placeholder: Describe what code/area needs improvement...
+    validations:
+      required: true
+
+  - type: textarea
+    id: reason
+    attributes:
+      label: Why?
+      description: What problem does this solve?
+      placeholder: Why is this refactoring needed?
+    validations:
+      required: true
+
+  - type: textarea
+    id: approach
+    attributes:
+      label: Proposed Approach
+      placeholder: How should we tackle this?
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional Notes
+      placeholder: References, related issues, etc...
