@@ -3,7 +3,6 @@ description: Performance issue or optimization
 type: Task
 labels:
   - performance
-  - "status: triage"
 body:
   - type: textarea
     id: description

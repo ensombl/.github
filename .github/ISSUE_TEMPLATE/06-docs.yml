@@ -3,7 +3,6 @@ description: Documentation updates or fixes
 type: Task
 labels:
   - documentation
-  - "status: triage"
 body:
   - type: textarea
     id: description

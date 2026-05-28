@@ -1,9 +1,6 @@
 name: Feature
 description: A request, idea, or new functionality
 type: Feature
-labels:
-  - feature
-  - "status: triage"
 body:
   - type: textarea
     id: problem

@@ -3,7 +3,6 @@ description: Research task or technical investigation
 type: Task
 labels:
   - research
-  - "status: triage"
 body:
   - type: textarea
     id: question
